@@ -49,6 +49,10 @@ header>.div:last-child {
  /* templates */
 .homePage{
     flex-wrap: nowrap;
+	gap:20px;
+}
+.homePage>div{
+	padding:0;
 }
 .homePage>div>a img{
 	transition: all 0.5s;

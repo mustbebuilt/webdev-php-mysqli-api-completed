@@ -1,21 +1,24 @@
+<?php
+require_once( "includes/config.php" );
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact Us</title>
+<title>SHU Films | Contact Us</title>
 <link rel="stylesheet" href="css/mobile.css" />
 <link
       rel="stylesheet"
       href="css/desktop.css"
       media="only screen and (min-width : 720px)"
     />
+	<script src="js/main.js" defer></script>
+		<script src="js/randomData.js" defer></script>
 </head>
 <body>
-<?php
-include("includes/header.php");
-?>
+<?php include("includes/header.php")?>
 <div class="mainContainer">
   <main>
     <div class="banner">
@@ -53,17 +56,12 @@ include("includes/header.php");
           </div>
         </form>
       </div>
-<div class="sideBar">
-        <h3>Featured Film</h3>
-        <div> <img src="images/babadook.jpg" alt="Babadook" /> </div>
-        <p>Info Here</p>
-      </div>
+		<?php
+	    include("includes/sidebar.php");
+		?>
     </section>
   </main>
 </div>
-<?php
-// add Footer
-?>
-<script src="js/main.js"></script>
+<?php include("includes/footer.php")?>
 </body>
 </html>
