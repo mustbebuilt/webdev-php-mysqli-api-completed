@@ -6,6 +6,12 @@
         event.preventDefault();
 
         const searchInput = searchForm.querySelector("input[name='q']").value;
+		
+		        // Check if the search query is empty
+        if (searchInput.trim() === "") {
+            searchResults.innerHTML = "<p>Please enter a search query.</p>";
+            return;
+        }
 
         // Use JavaScript fetch to retrieve search results from the API
         fetch(`api/searchData.php?q=${searchInput}`)
