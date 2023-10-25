@@ -24,7 +24,7 @@
           <form>
             <div>
               <label for="q">Search:</label>
-              <input type="text" name="q">
+              <input type="text" name="q" required>
             </div>
             <div>
               <input type="submit" value="Search for a Film">

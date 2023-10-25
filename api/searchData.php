@@ -5,7 +5,7 @@ header("Content-Type: application/json");
 require_once("../includes/config.php");
 
 // Check if the "q" parameter (search query) is provided in the GET request
-if (isset($_GET['q'])) {
+if (isset($_GET['q']) && $_GET['q'] !== "") { // Check if 'q' is set and not an empty string
     $searchQuery = '%' . $_GET['q'] . '%';
 
     // Prepare and execute the SQL query to search for films by title
@@ -23,7 +23,8 @@ if (isset($_GET['q'])) {
 
     echo json_encode($searchResults);
 } else {
-    // If the "q" parameter is not provided, return an empty array
+    // If the "q" parameter is not provided or is an empty string, return an empty array
     echo json_encode([]);
 }
+
 ?>

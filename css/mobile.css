@@ -141,6 +141,10 @@ tr:nth-child(odd) {
 .uc{
 	text-transform: uppercase;
 }
+.sideBar{
+	border-top:4px solid var(--header-bg-colour);
+	border-bottom:4px solid var(--header-bg-colour);
+}
 
 /* form styles */
 form>div {

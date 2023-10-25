@@ -72,6 +72,8 @@ header>.div:last-child {
 }
 
 .sideBar{
+	border-top:none;
+	border-bottom:none;
 	padding:5px;
     background-color: var(--header-bg-colour);
     color: var(--header-colour);
